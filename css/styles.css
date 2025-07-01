@@ -1,0 +1,468 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #002a14;
+    color: white;
+}
+
+h1, h2, h3 {
+    color: white;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+nav {
+    background-color: black;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: yellow;
+    color: black;
+    border: 1px solid yellow;
+}
+
+/* Hero Section (Homepage) */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+}
+
+.hero p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-top: 2rem;
+}
+
+.search-bar input {
+    padding: 0.6rem 1.2rem;
+    width: 350px;
+    border-radius: 30px;
+    border: 2px solid white;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 0.6rem 1.2rem;
+    margin-left: 0.5rem;
+    border-radius: 30px;
+    border: none;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Image Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Page Headings */
+.page-heading {
+    background-color: orange;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.page-heading h1 {
+    color: white;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Matches Section */
+.matches {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.match-card {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.match-card h3 {
+    margin-top: 0;
+    color: #002a14;
+}
+
+.match-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.match-card a:hover {
+    background-color: darkorange;
+}
+
+/* Players Filter Buttons */
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Players Grid */
+.players-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.player-card {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.player-card h3 {
+    color: #014421;
+    margin-top: 0;
+}
+
+.player-card p {
+    margin: 0.3rem 0;
+}
+
+/* Profile Button */
+.profile-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.2rem;
+    background-color: orange;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: darkorange;
+}
+
+/* Profile Info Card (Batting/Bowling style) */
+.profile-info {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.info-card {
+    background-color: white;
+    color: #014421;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.info-card p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+/* Stats Cards on Player Profile */
+.profile-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0 1rem 2rem;
+}
+
+.stats-card {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.stats-card h2 {
+    color: #014421;
+    margin-top: 0;
+}
+
+.stats-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.stats-card th, .stats-card td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.stats-card th {
+    background-color: #f5f5f5;
+}
+
+/* Stats Section */
+.stats-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* News Section */
+.news-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+.news-card {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.news-card h3 {
+    color: #014421;
+    margin-top: 0;
+}
+
+.news-card p {
+    margin: 0.5rem 0;
+}
+
+/* Branding Section */
+.branding-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+.branding-card {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.branding-card h3 {
+    color: #014421;
+    margin-top: 0;
+}
+
+.branding-card p {
+    margin: 0.5rem 0 1rem 0;
+    color: black;
+}
+
+/* Link Button Style */
+.link-button {
+    display: inline-block;
+    margin: 0.3rem 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: orange;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: darkorange;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+
+/* ---------- Animations ---------- */
+
+/* Page fade-in */
+body {
+    animation: fadeIn 1s ease;
+}
+
+/* Cards (matches, stats, news, player) slide and fade */
+.match-card, .stats-card, .news-card, .player-card, .branding-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideFade 0.7s ease forwards;
+    animation-delay: 0.3s;
+}
+
+/* Slightly different delay for a staggered feel */
+.match-card:nth-child(2), .stats-card:nth-child(2), .news-card:nth-child(2), .player-card:nth-child(2), .branding-card:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.match-card:nth-child(3), .stats-card:nth-child(3), .news-card:nth-child(3), .player-card:nth-child(3), .branding-card:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+/* Navbar link hover scale */
+nav ul li a {
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+}
+
+/* Buttons hover scale */
+a.link-button,
+a.profile-button,
+a:hover,
+button:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+/* Image gallery hover effect */
+.gallery img {
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gallery-card img {
+    width: 350px;   /* Increased from 280px */
+    height: 220px;  /* Increased from 180px */
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* Add spacing below page heading */
+.page-heading {
+    margin-bottom: 30px;  /* You can increase this if needed */
+}
+
+
+
+

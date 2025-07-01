@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhahran Youth Cricket Academy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">DYCA</div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="branding.html">Branding</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-box">
+            <h1>Welcome to Dhahran Youth Cricket Academy</h1>
+        </div>
+        <p>Empowering the future of cricket in Dhahran.</p>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for a player...">
+            <button id="searchButton">Search</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+
+        <div class="gallery-card">
+            <img src="images/golden-gladiators.jpg" alt="Golden Gladiators">
+            <p>Golden Gladiators</p>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/dhahran-titans.jpg" alt="Dhahran Titans">
+            <p>Dhahran Titans</p>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/al-fatih.jpg" alt="Al-Fatih">
+            <p>Al-Fatih</p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Dhahran Youth Cricket Academy | All Rights Reserved</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        const players = {
+            "amaan malik": "players/Amaan-Malik.html",
+            "mahad omer": "players/Mahad-Omer.html",
+            "hassaan mirza": "players/Hassaan-Mirza.html",
+            "uzair saeed": "players/Uzair-Saeed.html",
+            "umer ali": "players/Umer-Ali.html",
+ 	"ahsan mir": "players/Ahsan-Mir.html",
+            "basim faisal": "players/Basim-Faisal.html",
+            "abdul basit": "players/Abdul-Basit.html",
+            "affan burney": "players/Affan-Burney.html",
+            "ali zafar": "players/ali-zafar.html",
+
+            // Add the rest of your player names like this:
+            // "player name in lowercase": "players/file-name.html"
+        };
+
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+
+        searchButton.addEventListener('click', () => {
+            const query = searchInput.value.trim().toLowerCase();
+            if (players[query]) {
+                window.location.href = players[query];
+            } else {
+                alert("Player not found. Please check the name.");
+            }
+        });
+
+        searchInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                searchButton.click();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
